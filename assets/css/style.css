@@ -1,3 +1,22 @@
+@font-face {
+    font-family: 'RobotoMonoBold';
+    src: url(../font/Roboto_Mono/static/RobotoMono-Bold.ttf);
+}
+
+
 html {
     background-color: #000000;
+}
+
+.colorhtml {
+    color: #6f6f6f;
+    font-family: 'RobotoMonoBold';
+}
+
+.colorblue {
+    color: #89DDFF;
+}
+
+.colorred {
+    color: ;
 }
