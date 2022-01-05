@@ -8,9 +8,8 @@ html {
     background-color: #000000;
 }
 
-.colorhtml {
+.colorgrey {
     color: #6f6f6f;
-    font-family: 'RobotoMonoBold';
 }
 
 .colorblue {
@@ -18,5 +17,27 @@ html {
 }
 
 .colorred {
-    color: ;
+    color: #F07178;
+}
+
+.colorwhite {
+    color: #ffffff;
+}
+
+.fontRobotoBold {
+    font-family: 'RobotoMonoBold';
+}
+
+.hoverwhite:hover {
+    color: white;
+}
+
+.hoverred:hover {
+    color: #F07178;
+}
+
+/* Style CSS première page */
+
+nav a {
+    text-decoration: none;
 }
