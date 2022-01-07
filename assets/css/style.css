@@ -15,6 +15,7 @@
 
 html {
     background-color: #000000;
+    overflow-x: hidden;
 }
 
 .colorgrey {
@@ -41,12 +42,34 @@ html {
     font-family: 'RobotoMonoRegular';
 }
 
-.hoverwhite:hover {
-    color: white;
+.transitionWhite {
+    color: #ffffff;
+    transition: 0.8s;
 }
 
-.hoverred:hover {
+.transitionWhite:hover {
     color: #F07178;
+    transition: 0.8s;
+}
+
+.transitionRed {
+    color: #F07178;
+    transition: 0.8s;
+}
+
+.transitionRed:hover {
+    color: #ffffff;
+    transition: 0.8s;
+}
+
+.transitiongrey {
+    color: #6f6f6f;
+    transition: 0.8s;
+}
+
+.transitiongrey:hover {
+    color: #F07178;
+    transition: 0.8s;
 }
 
 /* Style CSS nav bar */
@@ -67,7 +90,14 @@ nav {
 
 nav div a {
     text-decoration: none;
+}
 
+nav div a:nth-child(3) {
+    margin-right: 2vh;
+}
+
+nav div a:nth-child(4) {
+    margin-right: 1vh;
 }
 
 .container1 {
@@ -83,7 +113,7 @@ nav div a {
 }
 
 .container2 a:nth-child(1), .container2 a:nth-child(2) {
-    margin-right: 10px;
+    margin-right: 2vh;
 }
 
 .logoLinkedin , .logoGithub {
@@ -92,6 +122,12 @@ nav div a {
 
 .logoLinkedin {
     margin-right: 5px;
+}
+
+.container2 a:nth-child(2) {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
 }
 
 /* Style CSS intro */
@@ -1015,7 +1051,7 @@ h1 {
 .containerGrid5 {
     display: grid;
     grid-template-columns: repeat(10,10vw);
-    grid-template-rows: repeat(10, 10vh);
+    grid-template-rows: repeat(9, 10vh);
 }
 
 .separatorflex {
@@ -1142,4 +1178,68 @@ h1 {
     align-items: center;
     font-size: 2.5vh;
     justify-content: start;
+}
+
+/* Style CSS Footer */
+
+.containerFooter {
+    display: grid;
+    grid-template-columns: repeat(10,10vw);
+    grid-template-rows: repeat(3, 10vh);
+}
+
+.separatorfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/10;
+    grid-row: 1/2;
+}
+
+.separatorfooter2 {
+    height: 1px;
+    width: 100%;
+    background-color: #dddddd;
+}
+
+.containerFooter p:nth-child(2) {
+    grid-column: 5/7;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.8vh;
+}
+
+.containerlinkfooter {
+    grid-column: 5/7;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+}
+
+.containerlinkfooter a {
+    padding: 1vh;
+    text-decoration: none;
+    color: #6f6f6f;
+    display: flex;
+    justify-content: center;
+}
+
+.containerlinksocial {
+    grid-column: 9/10;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.containerlinksocial a:nth-child(1) {
+    margin-right: 1vh;
+}
+
+.containerlinkfooter a:nth-child(2) {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
 }

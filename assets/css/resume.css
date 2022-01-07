@@ -1,0 +1,266 @@
+@font-face {
+    font-family: 'RobotoMonoBold';
+    src: url(../font/Roboto_Mono/static/RobotoMono-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'RobotoMonoRegular';
+    src: url(../font/Roboto_Mono/static/RobotoMono-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
+.colorgrey {
+    color: #6f6f6f;
+}
+
+.colorblue {
+    color: #89DDFF;
+}
+
+.colorred {
+    color: #F07178;
+}
+
+.colorwhite {
+    color: #ffffff;
+}
+
+.fontRobotoBold {
+    font-family: 'RobotoMonoBold';
+}
+
+.fontRobotoRegular {
+    font-family: 'RobotoMonoRegular';
+}
+
+.transitionWhite {
+    color: #ffffff;
+    transition: 0.8s;
+}
+
+.transitionWhite:hover {
+    color: #F07178;
+    transition: 0.8s;
+}
+
+.transitionRed {
+    color: #F07178;
+    transition: 0.8s;
+}
+
+.transitionRed:hover {
+    color: #ffffff;
+    transition: 0.8s;
+}
+
+.transitiongrey {
+    color: #6f6f6f;
+    transition: 0.8s;
+}
+
+.transitiongrey:hover {
+    color: #F07178;
+    transition: 0.8s;
+}
+
+/* Style CSS nav bar */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 20vh;
+    margin-top: -5vh;
+    position: fixed;
+    top: 0;
+    /* backdrop-filter: blur(15px); */
+    background: linear-gradient(#000000, #00000000);
+}
+
+nav div a {
+    text-decoration: none;
+}
+
+nav div a:nth-child(3) {
+    margin-right: 2vh;
+}
+
+nav div a:nth-child(4) {
+    margin-right: 1vh;
+}
+
+.container1 {
+    margin-left: 6.77%;
+    font-size: 3vh;
+}
+
+.container2 {
+    margin-right: 6.77%;
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
+}
+
+.container2 a:nth-child(1), .container2 a:nth-child(2) {
+    margin-right: 2vh;
+}
+
+.logoLinkedin , .logoGithub {
+    font-size: 25px;
+}
+
+.logoLinkedin {
+    margin-right: 5px;
+}
+
+.container2 a:nth-child(1) {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+}
+
+.container2 a:nth-child(2) {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+}
+
+/* Style CSS Global */
+
+.containerGrid1 {
+    display: grid;
+    grid-template-columns: repeat(10,10vw);
+    grid-template-rows: repeat(3, 10vh);
+    margin-top: 20vh;
+}
+
+.containerGrid1 h2 {
+    grid-column: 3/11;
+    grid-row: 1/2;
+    font-size: 6vh;
+}
+
+.downloadcv {
+    grid-column: 3/11;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+}
+
+.downloadcv p {
+    margin-left: 2vh;
+}
+
+.downloadcv a:nth-child(1) {
+    margin-right: 1vh;
+}
+
+.downloadcv a:nth-child(4) {
+    background-color: #F07178;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #000000;
+    padding: 1vh;
+    margin-left: 2vh;
+    transition: 0.8s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.downloadcv a:nth-child(4) span {
+    margin-left: 1vh;
+}
+
+.clouddownload {
+    margin-left: 1vh;
+    font-size: 3vh;
+    margin-right: 1vh;
+}
+
+.downloadcv a:nth-child(4):hover {
+    background-color: #ffffff;
+    transition: 0.8s;
+}
+
+/* Style CSS Footer */
+
+.containerFooter {
+    display: grid;
+    grid-template-columns: repeat(10,10vw);
+    grid-template-rows: repeat(3, 10vh);
+    position: fixed;
+    bottom: 0;
+}
+
+.separatorfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/10;
+    grid-row: 1/2;
+}
+
+.separatorfooter2 {
+    height: 1px;
+    width: 100%;
+    background-color: #dddddd;
+}
+
+.containerFooter p:nth-child(2) {
+    grid-column: 5/7;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.8vh;
+}
+
+.containerlinkfooter {
+    grid-column: 5/7;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+}
+
+.containerlinkfooter a {
+    padding: 1vh;
+    text-decoration: none;
+    color: #6f6f6f;
+    display: flex;
+    justify-content: center;
+}
+
+.containerlinksocial {
+    grid-column: 9/10;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.containerlinkfooter a:nth-child(1) {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+}
+
+.containerlinkfooter a:nth-child(2) {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+}
+
+.containerlinksocial a:nth-child(1) {
+    margin-right: 1vh;
+}
