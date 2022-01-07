@@ -140,7 +140,7 @@ nav div a:nth-child(4) {
 .containerGrid1 {
     display: grid;
     grid-template-columns: repeat(10,10vw);
-    grid-template-rows: repeat(3, 10vh);
+    grid-template-rows: repeat(4, 10vh);
     margin-top: 20vh;
 }
 
@@ -191,6 +191,16 @@ nav div a:nth-child(4) {
 .downloadcv a:nth-child(4):hover {
     background-color: #ffffff;
     transition: 0.8s;
+}
+
+.containerGrid1 p:nth-child(3) {
+    grid-column: 3/7;
+    grid-row: 3/4;
+}
+
+.containerGrid1 p:nth-child(4) {
+    grid-column: 3/7;
+    grid-row: 4/5;
 }
 
 /* Style CSS Footer */
