@@ -405,7 +405,7 @@ html {
     }
 
     .containerGrid1 h2 {
-        grid-column: 2/11;
+        grid-column: 3/11;
         grid-row: 1/2;
         font-size: 3vh;
         display: flex;
@@ -413,7 +413,7 @@ html {
     }
 
     .downloadcv {
-        grid-column: 2/9;
+        grid-column: 3/9;
         grid-row: 2/3;
         display: flex;
         align-items: center;
@@ -462,17 +462,18 @@ html {
    
 
     .containerGrid1 p:nth-child(3) {
-        grid-column: 2/9;
+        grid-column: 3/9;
         grid-row: 4/6;
         display: flex;
         align-items: center;
     }
 
     .containerGrid1 p:nth-child(4) {
-        grid-column: 2/9;
+        grid-column: 3/9;
         grid-row: 5/6;
         display: flex;
         align-items: flex-end;
+        
     }
 
 
